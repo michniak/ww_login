@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+@import "forms.css";
+
+html,body {
+	font: normal 90% verdana, arial, helvetica;
+	/*margin-top: 3px;*/
+}
+
+/* standard hyperlink, table labels */
+a {
+	text-decoration: none;	
+	color: #4D4D4D;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.a_small
+{
+	font-size: 80%;
+}
+
+.small
+{
+	font-size: 80%;
+}
+
+img 
+{
+	border: 0px;
+}
+
+#header_print
+{
+	font-size: 150%;
+	text-align: center;	
+	vertical-align: absmiddle;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.header {
+	width: inherit;
+	height: auto;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.line {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+#title {
+	width: 100%;
+	height: auto;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#description {
+	width: 100%;
+	height: auto;
+	font-size: 11px;
+	margin-top: 10px;
+	background: #EEEEEE;
+	border: #CCCCCC solid 1px;
+	position: relative;
+}
+
+div.disabled {
+	display: inline;
+	float: none;
+	clear: none;
+	color: #C0C0C0;
+}
+
+/* infobox - example: warning dialog 100% wide */
+.info_box {
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 5px 5px;
+	border: 1px solid #666666;
+	background-color: #ffffe1;
+	color: #666666;
+	font-size: 88%;
+}
+
+.info_box .title {
+	background-image: url(../../img/olas/icons/22x22/important.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 3px 0 3px 27px;
+	font-size: 110%;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+.info_box .body {
+	display: block;
+	padding-top: 5px;
+	color: #666666;
+	font-size: 110%;
+}
+
+/* infobox LARGE - example: warning dialog 100% wide */
+.info_box_basic
+{
+    width: auto;
+	height: 260px;
+	padding: 8px;
+	margin: 5px 5px;
+	border: 1px solid #666666;
+	background-color: #ffffe1;
+	color: #666666;
+	font-size: 100%;
+}
+
+.info_box_basic .title {
+	margin-top: 100px;
+	display: block;
+	font-size: 130%;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+.info_box_basic .body {
+	display: block;
+	padding: 5px 0px 0px 232px;
+	color: #666666;
+	font-size: 110%;
+}
+
+.info_box_basic p {
+    text-align: center;
+}
+
+.info_box_basic a {
+    border: thin solid black;
+    padding: 6px;
+}
+
+.info_box_alert {
+	border: 1px solid #666666;
+	background-color: #ffffe1;
+}
+.info_box_alert .title { background-image: url(../../img/olas/icons/22x22/important.png); }
+
+.info_box_warning {
+	border: 1px solid red;
+	background-color: #F5A9A9;
+}
+.info_box_warning .title { background-image: url(../../img/olas/icons/22x22/important.png); }
+
+.info_box_info {	
+	border: 1px solid #ccc;
+	background-color: #ddd;
+}
+.info_box_info .title { background-image: url(../../img/olas/icons/22x22/info.png); }
+
+/* preview mode box */
+.preview_mode_box
+{
+	width: 100%;
+	left: 0px; 
+	bottom: 0px; 
+	position: absolute; 
+	z-index: 999;
+	background-color: #4D4D4D;
+	color: white;
+	padding: 5px;
+}
+
+#popup_window
+{
+	position: absolute; 
+	left:30% !important; 
+	top:10% !important; 
+	background: white;
+	z-index: 999;
+}
+
+#legendBox
+{
+	margin-top: 15px;
+	border-top: 1px solid #ccc;
+	padding: 4px;
+	text-align: right;
+	font-size: 85%;
+}
+
+.popup_div
+{
+	border: 2px solid #4D4D4D;
+	padding: 5px;
+}
+
+/* choosing period in AMM reports */
+#periodDiv
+{
+	background-color: #dddddd;
+}
+
+.textBlue
+{
+	color: #5555ff;	
+}
+
+.tableDescription {
+	font-size: 140%;
+}
+
+table {
+	font: normal 120% verdana;
+}
+
+div#operations {
+  text-align: right;
+  font-size: 80%;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+a.action-btn {
+  	/*position: relative;*/
+	color: #4D4D4D;
+	text-decoration: none;	
+	/*background-color: #888;	*/
+	/*border: 1px solid #ffffff;*/
+	padding: 5px;
+	text-align: center;	
+	width: auto;
+	height: 20px;
+}
+
+a:hover.action-btn {
+    /*position: relative;*/
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px;
+	background-color: #4D4D4D;
+	/*border: 1px solid #ff9900;*/
+	height: 20px;
+}
+
+/* NOTIFICATION FOR LOGIN LAYOUT */
+#login_message {
+	position: relative;
+	background:#E1E1D6;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.welcome_message {
+    text-align: left; width: 750px; background: #E1E1D6; border: thin solid #4D4D4D; padding: 8px; margin: auto;
+}
+
+
+/* FOR PRINT VIEW / PRINTING */
+@media print {
+	div#operations
+	{
+		display: none;
+	}
+}
